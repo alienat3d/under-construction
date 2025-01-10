@@ -44,11 +44,12 @@ body {
 .tooltip-progress-bar {
 	opacity: 0;
 	position: absolute;
-	bottom: 25%;
-	left: 65%;
+	bottom: 27%;
+	left: 69%;
 	border: 2px solid #1C2F36;
 	border-radius: 25px;
 	width: 100px;
+	background-color: #fff;
 	transition: opacity .4s ease-in;
 }
 
@@ -70,48 +71,7 @@ body {
 	background-color: #58E2AA;
 }
 
-@media (min-width: 360px) {
-	/* .title {
-		left: 4%;
-		bottom: 33%;
-		font-size: 17px;
-		width: 320px;
-	} */
-}
-
-@media (min-width: 375px) {
-	/* .title {
-		left: 5.5%;
-		bottom: 34%;
-	} */
-}
-
-@media (min-width: 414px) {
-	/* .title {
-		left: 11%;
-		bottom: 41%;
-	}
-
-	.placeholder-pic {
-		margin-top: -82%;
-		height: 75%;
-	} */
-}
-
 @media (min-width: 768px) {
-
-	/* .title {
-		left: 29%;
-		bottom: 37%;
-		width: 385px;
-		font-size: 20px;
-		line-height: 1.2;
-	}
-
-	.placeholder-pic {
-		margin-top: -37%;
-		height: 80%;
-	} */
 	.title {
 		bottom: 13.5%;
 		font-size: 17px;
@@ -124,31 +84,7 @@ body {
 	}
 }
 
-@media (min-width: 810px) {
-	/* .title {
-		left: 29%;
-		bottom: 33%;
-	}
-
-	.placeholder-pic {
-		margin-top: -29%;
-		height: 85%;
-	} */
-}
-
 @media (min-width: 960px) and (min-height: 600px) {
-
-	/* .title {
-		left: 32%;
-		bottom: 21%;
-		width: 404px;
-		font-size: 21px;
-	}
-
-	.placeholder-pic {
-		margin-top: -10%;
-		height: 100%;
-	} */
 	.title {
 		bottom: 12%;
 		transform: translateX(-37%);
@@ -162,6 +98,11 @@ body {
 		background-position: center;
 		background-size: 71%;
 	}
+
+	.tooltip-progress-bar {
+		bottom: 28%;
+		left: 67%;
+	}
 }
 
 @media (min-width: 1007px) {
@@ -169,29 +110,12 @@ body {
 		bottom: 11%;
 	}
 
-	/* .title {
-		bottom: 16%;
-		font-size: 22px;
-		width: 500px;
+	.tooltip-progress-bar {
+		bottom: 27%;
 	}
-
-	.placeholder-pic {
-		margin-top: -5%;
-		height: 107%;
-	} */
 }
 
 @media (min-width: 1143px) {
-
-	/* .title {
-		left: 33.5%;
-		bottom: 15%;
-	}
-
-	.placeholder-pic {
-		margin-top: -6%;
-		height: 111%;
-	} */
 	.title {
 		bottom: 12%;
 	}
@@ -199,18 +123,14 @@ body {
 	.placeholder-pic {
 		background-size: 67%;
 	}
+
+	.tooltip-progress-bar {
+		left: 65%;
+		bottom: 26%;
+	}
 }
 
 @media (min-width: 1280px) {
-
-	/* .title {
-		left: 35.5%;
-		bottom: 12%;
-	}
-
-	.placeholder-pic {
-		height: 115%;
-	} */
 	.title {
 		bottom: 13%;
 		transform: translateX(-44%);
@@ -220,41 +140,51 @@ body {
 	.placeholder-pic {
 		background-size: 70%;
 	}
+
+	.tooltip-progress-bar {
+		left: 64%;
+		bottom: 25.5%;
+	}
 }
 
-@media (min-width: 1366px) {
-	/* .title {
-		left: 36%;
-		bottom: 13%;
-	} */
+@media (min-width: 1280px) and (min-height: 720px) {
+	.title {
+		bottom: 9%;
+	}
+
+	.tooltip-progress-bar {
+		bottom: 23%;
+	}
 }
 
 @media (min-width: 1536px) {
-	/* .title {
-		left: 37.4%;
-		bottom: 12%;
+	.title {
+		transform: translateX(-50%);
 		font-size: 23px;
 	}
 
-	.placeholder-pic {
-		margin-top: -5%;
-	} */
-}
+	.tooltip-progress-bar {
+		left: 63%;
+	}
 
-@media (min-width: 1600px) {
-	/* .title {
-		left: 37.8%;
-	} */
+	.tooltip-progress-bar::before {
+		bottom: -39px;
+		left: -26%;
+		width: 85px;
+	}
 }
 
 @media (min-width: 1920px) {
-	/* .title {
-		left: 38%;
-		max-width: 540px;
+	.placeholder-pic {
+		background-size: 55%;
 	}
 
-	.placeholder-pic {
-		margin-top: -4%;
-		height: 115%;
-	} */
+	.title {
+		bottom: 13%;
+	}
+
+	.tooltip-progress-bar {
+		bottom: 25%;
+		left: 62%;
+	}
 }
